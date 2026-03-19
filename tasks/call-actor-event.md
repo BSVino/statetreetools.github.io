@@ -6,13 +6,7 @@ title: Call Actor Event
 
 **Category:** Utilities | Events
 
-Calls a Blueprint event or function on an actor (or one of its components) when the state is entered, exited, or both. Parameters are configured directly in the StateTree editor and can be bound to other values in the tree.
-
----
-
-## When to Use
-
-Use this task when you want your StateTree to trigger behaviour defined in Blueprint — for example, playing a custom reaction, triggering a cinematic, notifying a UI widget, or starting a gameplay sequence — without writing a dedicated task for each case.
+Calls any Blueprint event or function on an actor (or one of its components) when the state is entered, exited, or both. Parameters are configured directly in the StateTree editor and can be bound to other values in the tree.
 
 ---
 
@@ -37,19 +31,7 @@ Once an event is selected, its input parameters appear here automatically. Fill 
 
 ## When to Fire
 
-By default the function is called when the state is **entered**. You can change this to fire on **exit** instead, or on **both** enter and exit.
-
-When exit firing is enabled you can further control which exit conditions trigger the call:
-
-| Option | Default | Description |
-|--------|---------|-------------|
-| On Exit — Stopped | Off | Fire when the state is interrupted or the StateTree is stopped |
-| On Exit — Succeeded | On | Fire when the state exits because it succeeded |
-| On Exit — Failed | Off | Fire when the state exits because it failed |
-
-When the task is set to fire only on exit, it stays **Running** for the duration of the state so it can observe the exit. When set to fire only on enter it completes immediately and does not hold up other tasks.
-
-The task's label in the StateTree editor shows **(Enter)**, **(Exit)**, or **(Enter\|Exit)** so the timing is visible at a glance.
+By default the function is called when the state is **entered**. You can change this to fire on **exit** instead, or on **both** enter and exit. See [Enter / Exit Firing](../enter-exit-firing) for a full explanation of how this works across all tasks.
 
 ---
 
@@ -61,7 +43,7 @@ If the actor is invalid, the component is not found, or the named function does 
 
 ## Example
 
-A patrol AI enters a **Search** state. On enter, Call Actor Event triggers `BP_StartSearchAnimation` on the character. On exit (succeeded), it triggers `BP_EndSearchAnimation`. The two calls are handled by a single task with **On Enter** and **On Exit — Succeeded** both enabled.
+A patrol AI enters a **Search** state. On enter, Call Actor Event triggers `StartSearchAnimation` on the character. On exit (succeeded), another Call Actor Event triggers `EndSearchAnimation`. The two calls are handled by a two tasks with **On Enter** and **On Exit — Succeeded** enabled respectively.
 
 ---
 
