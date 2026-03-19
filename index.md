@@ -46,7 +46,11 @@ Property functions compute a value each time a binding is evaluated.
 | Category | Description |
 |----------|-------------|
 | [Components](/property-functions/components) | Get root component and other component accessors |
-| [Utilities](/property-functions/utilities) | Math, string conversion, and general value helpers |
+| [Math \| Float](/property-functions/math-float) | Arithmetic, comparisons, trigonometry, and general float math |
+| [Math \| Vector](/property-functions/math-vector) | Vector arithmetic, measurement, and conversion |
+| [Utilities](/property-functions/utilities) | String conversion and general value utilities |
+| [Call Pure Function](/property-functions/call-pure-function) | Call a BlueprintPure function and expose its return value as a binding |
+| [Gameplay Attributes](/property-functions/gameplay-attributes) | Read GAS float attributes from an actor's Ability System Component |
 
 ---
 
