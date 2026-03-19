@@ -60,4 +60,4 @@ If the actor is invalid, the component is not found, or the named event does not
 
 ---
 
-[← Back to Gameplay | Actions](/tasks/actions) · [← Back to home](/)
+[← Back to Gameplay \| Actions](/tasks/actions) · [← Back to home](/)

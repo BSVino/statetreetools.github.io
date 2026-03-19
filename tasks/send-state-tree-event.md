@@ -40,4 +40,4 @@ By default the event is sent when the state is **entered**. You can also send it
 
 If the actor is invalid or has no StateTree component the task will fail. You can control whether a failure causes the task to return **Failed** or **Succeeded** using the **Error Means Failure** option.
 
-[← Back to Gameplay | StateTree](/tasks/statetree) · [← Back to home](/)
+[← Back to Gameplay \| StateTree](/tasks/statetree) · [← Back to home](/)

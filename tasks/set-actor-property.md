@@ -44,4 +44,4 @@ If the actor is invalid, the component is not found, the named property does not
 
 The StateTree editor will warn you at compile time if neither enter nor exit firing is enabled.
 
-[← Back to Utilities | Properties](/tasks/properties) · [← Back to home](/)
+[← Back to Utilities \| Properties](/tasks/properties) · [← Back to home](/)
