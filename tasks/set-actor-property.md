@@ -4,6 +4,7 @@ title: Set Actor Property
 
 # Set Actor Property
 
+**Plugin:** StateTreeToolsCore
 **Category:** Utilities | Properties
 
 Sets any exposed property on an actor or one of its components when the state is entered, exited, or both. The property and its value are configured directly in the StateTree editor — no custom task or Blueprint function needed.
@@ -42,13 +43,5 @@ A common pattern is to set a property to one value on enter and restore it to an
 If the actor is invalid, the component is not found, the named property does not exist, or there is a type mismatch at runtime, the task will fail. You can control whether a failure causes the task to return **Failed** or **Succeeded** using the **Error Means Failure** option.
 
 The StateTree editor will warn you at compile time if neither enter nor exit firing is enabled.
-
----
-
-## Example
-
-An AI enters an **Alerted** state. A Set Actor Property task sets `MovementSpeed` to `400` on enter and back to `200` on exit (succeeded), so the character sprints while alerted and returns to a normal pace when the state ends.
-
----
 
 [← Back to Utilities | Properties](properties) · [← Back to home](..)

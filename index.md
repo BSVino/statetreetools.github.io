@@ -22,21 +22,40 @@ Examples of what you can build with StateTree Tools — patrol AI, perception-dr
 
 ## Tasks
 
-Tasks are the building blocks of your StateTree states. StateTree Tools provides tasks across several categories:
+Tasks run when a state is entered or exited and can keep the state alive while they do work.
 
 | Category | Description |
 |----------|-------------|
 | [Audio](tasks/audio) | Play and stop sounds on actors |
 | [Animation](tasks/animation) | Trigger and control animation montages |
-| [Components](tasks/components) | Enable, disable, and toggle component visibility |
 | [Debug](tasks/debug) | Draw debug shapes; flush debug lines and strings |
 | [Niagara](tasks/niagara) | Spawn and manage Niagara particle systems |
 | [Navigation](tasks/navigation) | Find random reachable points for patrol and wandering |
 | [Gameplay \| StateTree](tasks/statetree) | Send events with typed payloads to StateTree components |
 | [Utilities \| Events](tasks/events) | Call Blueprint events and dispatchers on actors by name |
 | [Utilities \| Properties](tasks/properties) | Set actor and component properties by name |
-| [Utilities](tasks/utilities) | String, math, and general helpers |
 | [Abilities](tasks/abilities) | Activate GAS abilities and send gameplay events |
+
+---
+
+## Property Functions
+
+Property functions compute a value each time a binding is evaluated.
+
+| Category | Description |
+|----------|-------------|
+| [Components](tasks/components) | Get root component and other component accessors |
+| [Utilities](tasks/utilities) | Math, string conversion, and general value helpers |
+
+---
+
+## Conditions
+
+Conditions test a value and return true or false, used in transitions and state selection.
+
+| Category | Description |
+|----------|-------------|
+| [Abilities](tasks/abilities) | Check gameplay tags on an actor's Ability System Component |
 
 ---
 

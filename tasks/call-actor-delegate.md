@@ -4,6 +4,7 @@ title: Call Actor Delegate
 
 # Call Actor Delegate
 
+**Plugin:** StateTreeToolsCore
 **Category:** Utilities | Events
 
 Broadcasts a Blueprint event dispatcher (multicast delegate) on an actor or one of its components when the state is entered, exited, or both. Parameters are configured directly in the StateTree editor and can be bound to other values in the tree.
@@ -38,13 +39,5 @@ By default the delegate is broadcast when the state is **entered**. You can chan
 ## Error Handling
 
 If the actor is invalid, the component is not found, or the named delegate does not exist at runtime, the task will fail. You can control whether a failure causes the task to return **Failed** or **Succeeded** using the **Error Means Failure** option.
-
----
-
-## Example
-
-A door actor has an event dispatcher `OnDoorOpened`. When an AI enters a **Pass Through Door** state, a Call Actor Delegate task broadcasts `OnDoorOpened` on the door, notifying any bound listeners — for example a Blueprint that plays a creak sound or triggers a cinematic.
-
----
 
 [← Back to Utilities | Events](events) · [← Back to home](..)

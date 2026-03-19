@@ -4,6 +4,7 @@ title: Call Actor Event
 
 # Call Actor Event
 
+**Plugin:** StateTreeToolsCore
 **Category:** Utilities | Events
 
 Calls any Blueprint event or function on an actor (or one of its components) when the state is entered, exited, or both. Parameters are configured directly in the StateTree editor and can be bound to other values in the tree.
@@ -38,13 +39,5 @@ By default the function is called when the state is **entered**. You can change 
 ## Error Handling
 
 If the actor is invalid, the component is not found, or the named function does not exist at runtime, the task will fail. You can control whether a failure causes the task to return **Failed** or **Succeeded** using the **Error Means Failure** option.
-
----
-
-## Example
-
-A patrol AI enters a **Search** state. On enter, Call Actor Event triggers `StartSearchAnimation` on the character. On exit (succeeded), another Call Actor Event triggers `EndSearchAnimation`. The two calls are handled by a two tasks with **On Enter** and **On Exit — Succeeded** enabled respectively.
-
----
 
 [← Back to Utilities | Events](events) · [← Back to home](..)
