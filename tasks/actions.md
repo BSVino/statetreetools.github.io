@@ -8,6 +8,6 @@ Tasks for driving async Blueprint logic from a StateTree state.
 
 | Task | Description |
 |------|-------------|
-| [Start Action And Wait](https://bsvino.github.io/statetreetools.github.io/tasks/start-action-and-wait) | Call a Blueprint event on an actor and wait for it to signal completion |
+| [Start Action And Wait](/tasks/start-action-and-wait) | Call a Blueprint event on an actor and wait for it to signal completion |
 
-[← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to home](/)

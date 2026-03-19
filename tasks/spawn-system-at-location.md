@@ -49,4 +49,4 @@ Receives the `UNiagaraComponent` that was created. Bind downstream tasks or cond
 
 If the System Template is not set the task will fail at compile time. The task inherits **Error Means Failure** from `FStateTreeTools_TaskCommon`.
 
-[← Back to Niagara](https://bsvino.github.io/statetreetools.github.io/tasks/niagara) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Niagara](/tasks/niagara) · [← Back to home](/)

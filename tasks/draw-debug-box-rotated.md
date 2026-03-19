@@ -7,7 +7,7 @@ title: Draw Debug Box (Rotated)
 **Plugin:** StateTreeToolsCore
 **Category:** Debug
 
-Draws an oriented debug box centered at a world-space position with a quaternion rotation. When **While Task Is Active** is enabled the box is redrawn every tick. When disabled it is drawn once on enter and the task immediately succeeds. For an axis-aligned box see [Draw Debug Box](https://bsvino.github.io/statetreetools.github.io/tasks/draw-debug-box).
+Draws an oriented debug box centered at a world-space position with a quaternion rotation. When **While Task Is Active** is enabled the box is redrawn every tick. When disabled it is drawn once on enter and the task immediately succeeds. For an axis-aligned box see [Draw Debug Box](/tasks/draw-debug-box).
 
 ---
 
@@ -42,4 +42,4 @@ Line thickness in world units. Default is `0` (hairline).
 
 ---
 
-[← Back to Debug](https://bsvino.github.io/statetreetools.github.io/tasks/debug) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Debug](/tasks/debug) · [← Back to home](/)

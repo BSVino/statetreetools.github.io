@@ -32,7 +32,7 @@ An optional name identifying the source of the event. Leave as `None` if the ori
 
 ## When to Fire
 
-By default the event is sent when the state is **entered**. You can also send it on **exit**, with fine-grained control over which exit reasons trigger the send (Stopped, Succeeded, or Failed). See [Enter / Exit Firing](https://bsvino.github.io/statetreetools.github.io/enter-exit-firing) for a full explanation.
+By default the event is sent when the state is **entered**. You can also send it on **exit**, with fine-grained control over which exit reasons trigger the send (Stopped, Succeeded, or Failed). See [Enter / Exit Firing](/enter-exit-firing) for a full explanation.
 
 ---
 
@@ -40,4 +40,4 @@ By default the event is sent when the state is **entered**. You can also send it
 
 If the actor is invalid or has no StateTree component the task will fail. You can control whether a failure causes the task to return **Failed** or **Succeeded** using the **Error Means Failure** option.
 
-[← Back to Gameplay | StateTree](https://bsvino.github.io/statetreetools.github.io/tasks/statetree) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Gameplay | StateTree](/tasks/statetree) · [← Back to home](/)

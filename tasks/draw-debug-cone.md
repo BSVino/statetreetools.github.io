@@ -7,7 +7,7 @@ title: Draw Debug Cone
 **Plugin:** StateTreeToolsCore
 **Category:** Debug
 
-Draws a wireframe debug cone defined by an origin, a direction vector, a length, and separate angular widths for horizontal and vertical spread. Angles are specified in radians. When **While Task Is Active** is enabled the cone is redrawn every tick. When disabled it is drawn once on enter and the task immediately succeeds. For a cone defined by origin and rotation see [Draw Debug Alt Cone](https://bsvino.github.io/statetreetools.github.io/tasks/draw-debug-alt-cone).
+Draws a wireframe debug cone defined by an origin, a direction vector, a length, and separate angular widths for horizontal and vertical spread. Angles are specified in radians. When **While Task Is Active** is enabled the cone is redrawn every tick. When disabled it is drawn once on enter and the task immediately succeeds. For a cone defined by origin and rotation see [Draw Debug Alt Cone](/tasks/draw-debug-alt-cone).
 
 ---
 
@@ -51,4 +51,4 @@ Line thickness in world units. Default is `0` (hairline).
 
 ---
 
-[← Back to Debug](https://bsvino.github.io/statetreetools.github.io/tasks/debug) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Debug](/tasks/debug) · [← Back to home](/)

@@ -43,4 +43,4 @@ Receives the `UAudioComponent` that was created. Bind downstream tasks or condit
 
 If the Sound asset is not set the task will fail at compile time. The task inherits **Error Means Failure** from `FStateTreeTools_TaskCommon`.
 
-[← Back to Audio](https://bsvino.github.io/statetreetools.github.io/tasks/audio) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Audio](/tasks/audio) · [← Back to home](/)

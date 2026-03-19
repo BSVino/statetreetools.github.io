@@ -7,7 +7,7 @@ title: Play Sound 2D
 **Plugin:** StateTreeToolsCore
 **Category:** Audio
 
-Plays a non-spatialized 2D sound when the state is entered. The task fires once and immediately succeeds — it does not wait for the sound to finish. Use [Spawn Sound 2D](https://bsvino.github.io/statetreetools.github.io/tasks/spawn-sound-2d) instead if you need to track playback or stop the sound when the state exits.
+Plays a non-spatialized 2D sound when the state is entered. The task fires once and immediately succeeds — it does not wait for the sound to finish. Use [Spawn Sound 2D](/tasks/spawn-sound-2d) instead if you need to track playback or stop the sound when the state exits.
 
 ---
 
@@ -40,4 +40,4 @@ When enabled the sound bypasses the game audio focus rules and always plays. Sui
 
 If the Sound asset is not set the task will fail at compile time. At runtime the task inherits **Error Means Failure** from `FStateTreeTools_TaskCommon`, which controls whether a failure returns **Failed** or **Succeeded**.
 
-[← Back to Audio](https://bsvino.github.io/statetreetools.github.io/tasks/audio) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Audio](/tasks/audio) · [← Back to home](/)

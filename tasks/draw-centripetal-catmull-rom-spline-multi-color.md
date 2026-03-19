@@ -7,7 +7,7 @@ title: Draw Centripetal Catmull-Rom Spline (Multi Color)
 **Plugin:** StateTreeToolsCore
 **Category:** Debug
 
-Draws a smooth centripetal Catmull-Rom spline through an array of world-space control points, with a separate color specified per segment. When **While Task Is Active** is enabled the spline is redrawn every tick. When disabled it is drawn once on enter and the task immediately succeeds. For a single-color variant see [Draw Centripetal Catmull-Rom Spline](https://bsvino.github.io/statetreetools.github.io/tasks/draw-centripetal-catmull-rom-spline).
+Draws a smooth centripetal Catmull-Rom spline through an array of world-space control points, with a separate color specified per segment. When **While Task Is Active** is enabled the spline is redrawn every tick. When disabled it is drawn once on enter and the task immediately succeeds. For a single-color variant see [Draw Centripetal Catmull-Rom Spline](/tasks/draw-centripetal-catmull-rom-spline).
 
 ---
 
@@ -42,4 +42,4 @@ Line thickness in world units. Default is `0` (hairline).
 
 ---
 
-[← Back to Debug](https://bsvino.github.io/statetreetools.github.io/tasks/debug) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Debug](/tasks/debug) · [← Back to home](/)

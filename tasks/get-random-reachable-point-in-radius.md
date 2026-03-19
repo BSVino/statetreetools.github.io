@@ -34,4 +34,4 @@ Receives the world-space location of the randomly selected reachable point when 
 
 This task does not inherit from `FStateTreeTools_TaskCommon` and therefore does not have an **Error Means Failure** toggle. If the navigation query fails (no reachable point found, or the navigation system is unavailable) the task returns **Failed**.
 
-[← Back to Navigation](https://bsvino.github.io/statetreetools.github.io/tasks/navigation) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Navigation](/tasks/navigation) · [← Back to home](/)

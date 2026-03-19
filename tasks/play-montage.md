@@ -58,4 +58,4 @@ Fires when the montage finishes blending in and is fully active. Configure the `
 
 If the Actor is invalid, the Skeletal Mesh Component is not found, or the montage cannot be played, the task will fail. The task inherits **Error Means Failure** from `FStateTreeTools_TaskCommon`.
 
-[← Back to Animation](https://bsvino.github.io/statetreetools.github.io/tasks/animation) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Animation](/tasks/animation) · [← Back to home](/)

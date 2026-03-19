@@ -64,4 +64,4 @@ When enabled the applied effect handle is removed when the state exits. Useful f
 
 If either actor has no Ability System Component or the Gameplay Effect class is invalid the task will fail. You can control whether a failure causes the task to return **Failed** or **Succeeded** using the **Error Means Failure** option.
 
-[← Back to Abilities](https://bsvino.github.io/statetreetools.github.io/tasks/abilities) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Abilities](/tasks/abilities) · [← Back to home](/)

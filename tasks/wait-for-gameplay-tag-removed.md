@@ -31,4 +31,4 @@ A `FStateTreeTools_OutputEventAction` that configures an optional StateTree even
 
 If the actor is invalid or has no Ability System Component the task will fail. You can control whether a failure causes the task to return **Failed** or **Succeeded** using the **Error Means Failure** option.
 
-[← Back to Abilities](https://bsvino.github.io/statetreetools.github.io/tasks/abilities) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Abilities](/tasks/abilities) · [← Back to home](/)

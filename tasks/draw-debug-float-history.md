@@ -7,7 +7,7 @@ title: Draw Debug Float History
 **Plugin:** StateTreeToolsCore
 **Category:** Debug
 
-Draws a debug graph of a `FDebugFloatHistory` at a fixed world-space location. The graph shows the recorded float values over time as a 2D chart in world space. When **While Task Is Active** is enabled the graph is redrawn every tick. When disabled it is drawn once on enter and the task immediately succeeds. For a version positioned by a full `FTransform` see [Draw Debug Float History (Transform)](https://bsvino.github.io/statetreetools.github.io/tasks/draw-debug-float-history-transform).
+Draws a debug graph of a `FDebugFloatHistory` at a fixed world-space location. The graph shows the recorded float values over time as a 2D chart in world space. When **While Task Is Active** is enabled the graph is redrawn every tick. When disabled it is drawn once on enter and the task immediately succeeds. For a version positioned by a full `FTransform` see [Draw Debug Float History (Transform)](/tasks/draw-debug-float-history-transform).
 
 ---
 
@@ -39,4 +39,4 @@ Rendering depth priority. Default is `0`.
 
 ---
 
-[← Back to Debug](https://bsvino.github.io/statetreetools.github.io/tasks/debug) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Debug](/tasks/debug) · [← Back to home](/)

@@ -19,8 +19,8 @@ This task has no geometry parameters. All fields below control when the flush is
 
 ## When to Fire
 
-By default the flush happens when the state is **entered**. You can also trigger it on **exit**, with separate toggles for which exit reasons fire it (Stopped, Succeeded, or Failed). See [Enter / Exit Firing](https://bsvino.github.io/statetreetools.github.io/enter-exit-firing) for a full explanation.
+By default the flush happens when the state is **entered**. You can also trigger it on **exit**, with separate toggles for which exit reasons fire it (Stopped, Succeeded, or Failed). See [Enter / Exit Firing](/enter-exit-firing) for a full explanation.
 
 ---
 
-[← Back to Debug](https://bsvino.github.io/statetreetools.github.io/tasks/debug) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Debug](/tasks/debug) · [← Back to home](/)

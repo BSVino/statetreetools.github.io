@@ -32,7 +32,7 @@ Once a delegate is selected, its parameters appear here automatically. Fill them
 
 ## When to Fire
 
-By default the delegate is broadcast when the state is **entered**. You can change this to fire on **exit** instead, or on **both** enter and exit. See [Enter / Exit Firing](https://bsvino.github.io/statetreetools.github.io/enter-exit-firing) for a full explanation of how this works across all tasks.
+By default the delegate is broadcast when the state is **entered**. You can change this to fire on **exit** instead, or on **both** enter and exit. See [Enter / Exit Firing](/enter-exit-firing) for a full explanation of how this works across all tasks.
 
 ---
 
@@ -40,4 +40,4 @@ By default the delegate is broadcast when the state is **entered**. You can chan
 
 If the actor is invalid, the component is not found, or the named delegate does not exist at runtime, the task will fail. You can control whether a failure causes the task to return **Failed** or **Succeeded** using the **Error Means Failure** option.
 
-[← Back to Utilities | Events](https://bsvino.github.io/statetreetools.github.io/tasks/events) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Utilities | Events](/tasks/events) · [← Back to home](/)

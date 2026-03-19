@@ -7,7 +7,7 @@ title: Draw Circle
 **Plugin:** StateTreeToolsCore
 **Category:** Debug
 
-Draws a debug circle in 3D space defined by a base position and explicit X and Y axis vectors, giving full control over the circle's plane orientation. When **While Task Is Active** is enabled the circle is redrawn every tick. When disabled it is drawn once on enter and the task immediately succeeds. For a center+YZ-axis version see [Draw Debug Circle](https://bsvino.github.io/statetreetools.github.io/tasks/draw-debug-circle).
+Draws a debug circle in 3D space defined by a base position and explicit X and Y axis vectors, giving full control over the circle's plane orientation. When **While Task Is Active** is enabled the circle is redrawn every tick. When disabled it is drawn once on enter and the task immediately succeeds. For a center+YZ-axis version see [Draw Debug Circle](/tasks/draw-debug-circle).
 
 ---
 
@@ -48,4 +48,4 @@ Line thickness in world units. Default is `0` (hairline).
 
 ---
 
-[← Back to Debug](https://bsvino.github.io/statetreetools.github.io/tasks/debug) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Debug](/tasks/debug) · [← Back to home](/)

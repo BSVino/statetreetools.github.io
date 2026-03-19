@@ -7,7 +7,7 @@ title: Draw Debug Solid Plane
 **Plugin:** StateTreeToolsCore
 **Category:** Debug
 
-Draws a solid-filled debug plane centered at a location, using a uniform size for both axes. When **While Task Is Active** is enabled the plane is redrawn every tick. When disabled it is drawn once on enter and the task immediately succeeds. For a version with separate X/Y extents see [Draw Debug Solid Plane (Extents)](https://bsvino.github.io/statetreetools.github.io/tasks/draw-debug-solid-plane-extents).
+Draws a solid-filled debug plane centered at a location, using a uniform size for both axes. When **While Task Is Active** is enabled the plane is redrawn every tick. When disabled it is drawn once on enter and the task immediately succeeds. For a version with separate X/Y extents see [Draw Debug Solid Plane (Extents)](/tasks/draw-debug-solid-plane-extents).
 
 ---
 
@@ -39,4 +39,4 @@ Rendering depth priority. Default is `0`.
 
 ---
 
-[← Back to Debug](https://bsvino.github.io/statetreetools.github.io/tasks/debug) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Debug](/tasks/debug) · [← Back to home](/)

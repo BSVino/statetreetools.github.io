@@ -60,4 +60,4 @@ If the actor is invalid, the component is not found, or the named event does not
 
 ---
 
-[← Back to Gameplay | Actions](https://bsvino.github.io/statetreetools.github.io/tasks/actions) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Gameplay | Actions](/tasks/actions) · [← Back to home](/)

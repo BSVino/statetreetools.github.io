@@ -40,4 +40,4 @@ When enabled the task cancels the tracked ability instance when the state exits 
 
 If the actor has no Ability System Component, the ability class is invalid, or the ability uses the `NonInstanced` policy, the task will fail. You can control whether a failure causes the task to return **Failed** or **Succeeded** using the **Error Means Failure** option inherited from `FStateTreeTools_TaskCommon`.
 
-[← Back to Abilities](https://bsvino.github.io/statetreetools.github.io/tasks/abilities) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Abilities](/tasks/abilities) · [← Back to home](/)

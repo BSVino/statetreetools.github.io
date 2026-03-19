@@ -6,4 +6,4 @@ title: Utilities
 
 *Coming soon.*
 
-[← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to home](/)

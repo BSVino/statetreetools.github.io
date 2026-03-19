@@ -26,7 +26,7 @@ The `FGameplayEventData` payload to send with the event. This includes source an
 
 ## When to Fire
 
-By default the event is sent when the state is **entered**. You can also send it on **exit**, with separate toggles for which exit reasons trigger the send (Stopped, Succeeded, or Failed). See [Enter / Exit Firing](https://bsvino.github.io/statetreetools.github.io/enter-exit-firing) for a full explanation.
+By default the event is sent when the state is **entered**. You can also send it on **exit**, with separate toggles for which exit reasons trigger the send (Stopped, Succeeded, or Failed). See [Enter / Exit Firing](/enter-exit-firing) for a full explanation.
 
 ---
 
@@ -34,4 +34,4 @@ By default the event is sent when the state is **entered**. You can also send it
 
 If the actor is invalid or has no Ability System Component the task will fail. You can control whether a failure causes the task to return **Failed** or **Succeeded** using the **Error Means Failure** option.
 
-[← Back to Abilities](https://bsvino.github.io/statetreetools.github.io/tasks/abilities) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Abilities](/tasks/abilities) · [← Back to home](/)

@@ -7,7 +7,7 @@ title: Play Sound At Location
 **Plugin:** StateTreeToolsCore
 **Category:** Audio
 
-Plays a spatialized sound at a world-space location when the state is entered. The task fires once and immediately succeeds — it does not wait for the sound to finish. Use [Spawn Sound At Location](https://bsvino.github.io/statetreetools.github.io/tasks/spawn-sound-at-location) instead if you need to track playback or hold a reference to the audio component.
+Plays a spatialized sound at a world-space location when the state is entered. The task fires once and immediately succeeds — it does not wait for the sound to finish. Use [Spawn Sound At Location](/tasks/spawn-sound-at-location) instead if you need to track playback or hold a reference to the audio component.
 
 ---
 
@@ -43,4 +43,4 @@ Playback start offset in seconds. Default is `0.0`.
 
 If the Sound asset is not set the task will fail at compile time. The task inherits **Error Means Failure** from `FStateTreeTools_TaskCommon`.
 
-[← Back to Audio](https://bsvino.github.io/statetreetools.github.io/tasks/audio) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Audio](/tasks/audio) · [← Back to home](/)

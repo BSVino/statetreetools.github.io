@@ -32,7 +32,7 @@ Once a property is selected, a value field appears matching the property's type.
 
 ## When to Fire
 
-By default the property is set when the state is **entered**. You can change this to fire on **exit** instead, or on **both** enter and exit. See [Enter / Exit Firing](https://bsvino.github.io/statetreetools.github.io/enter-exit-firing) for a full explanation of how this works across all tasks.
+By default the property is set when the state is **entered**. You can change this to fire on **exit** instead, or on **both** enter and exit. See [Enter / Exit Firing](/enter-exit-firing) for a full explanation of how this works across all tasks.
 
 A common pattern is to set a property to one value on enter and restore it to another on exit, using two Set Actor Property tasks in the same state with opposite timing settings.
 
@@ -44,4 +44,4 @@ If the actor is invalid, the component is not found, the named property does not
 
 The StateTree editor will warn you at compile time if neither enter nor exit firing is enabled.
 
-[← Back to Utilities | Properties](https://bsvino.github.io/statetreetools.github.io/tasks/properties) · [← Back to home](https://bsvino.github.io/statetreetools.github.io/)
+[← Back to Utilities | Properties](/tasks/properties) · [← Back to home](/)
