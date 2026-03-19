@@ -60,7 +60,7 @@ Conditions test a value and return true or false, used in transitions and state 
 
 | Category | Description |
 |----------|-------------|
-| [Abilities](/tasks/abilities) | Check gameplay tags on an actor's Ability System Component |
+| [Gameplay Tags](/conditions/gameplay-tags) | Check gameplay tag state on an actor's Ability System Component |
 
 ---
 
