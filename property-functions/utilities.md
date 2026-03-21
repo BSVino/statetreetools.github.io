@@ -4,7 +4,7 @@ title: Utilities
 
 # Utilities
 
-Property functions for string conversion and general value utilities.
+Property functions for string conversion and general value utilities. **Requires UE 5.5+.**
 
 | Property Function | Description |
 |-------------------|-------------|

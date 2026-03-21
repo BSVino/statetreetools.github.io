@@ -4,7 +4,7 @@ title: Math | Vector
 
 # Math \| Vector
 
-Property functions for 3D vector arithmetic, measurement, and conversion.
+Property functions for 3D vector arithmetic, measurement, and conversion. **Requires UE 5.5+.**
 
 | Property Function | Description |
 |-------------------|-------------|

@@ -4,6 +4,19 @@ title: Getting Started
 
 # Getting Started
 
+## Supported Versions
+
+StateTree Tools supports Unreal Engine 5.4, 5.5, and 5.6. Most features are available on all supported versions.
+
+| Feature | UE 5.4 | UE 5.5 | UE 5.6 |
+|---------|--------|--------|--------|
+| Tasks | ✓ | ✓ | ✓ |
+| Conditions | ✓ | ✓ | ✓ |
+| Components | ✓ | ✓ | ✓ |
+| Property Functions | — | ✓ | ✓ |
+
+---
+
 ## Install the plugin
 
 Purchase StateTree Tools on Fab and add it to your engine version from the Epic Games Launcher. The plugin comes with precompiled binaries so no source compilation is needed.

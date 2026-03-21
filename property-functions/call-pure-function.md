@@ -4,7 +4,7 @@ title: Call Pure Function
 
 # Call Pure Function
 
-Property functions for calling `BlueprintPure` functions on actors or their components and exposing the return value as a bindable output. Each variant covers a different output type; all share the same Setup configuration.
+Property functions for calling `BlueprintPure` functions on actors or their components and exposing the return value as a bindable output. **Requires UE 5.5+.** Each variant covers a different output type; all share the same Setup configuration.
 
 Every variant provides a custom details panel. Set **ActorClass** to populate a searchable dropdown of pure functions whose return type matches the variant. Set **ComponentName** if the function lives on a component rather than the actor directly.
 

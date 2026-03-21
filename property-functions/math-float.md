@@ -4,7 +4,7 @@ title: Math | Float
 
 # Math \| Float
 
-Property functions for float arithmetic, comparisons, trigonometry, and general math operations.
+Property functions for float arithmetic, comparisons, trigonometry, and general math operations. **Requires UE 5.5+.**
 
 | Property Function | Description |
 |-------------------|-------------|

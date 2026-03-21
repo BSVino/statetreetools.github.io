@@ -41,6 +41,8 @@ Tasks run when a state is entered or exited and can keep the state alive while t
 
 ## Property Functions
 
+> **Requires UE 5.5 or later.** Property functions are not available in UE 5.4.
+
 Property functions compute a value each time a binding is evaluated.
 
 | Category | Description |

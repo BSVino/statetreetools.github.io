@@ -4,7 +4,7 @@ title: Components
 
 # Components
 
-Property functions for accessing actor components.
+Property functions for accessing actor components. **Requires UE 5.5+.**
 
 | Property Function | Description |
 |-------------------|-------------|
