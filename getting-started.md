@@ -14,6 +14,7 @@ StateTree Tools supports Unreal Engine 5.1 through 5.7. Most features are availa
 | Conditions | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Components | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Property Functions | — | — | — | — | ✓ | ✓ | ✓ |
+| Demo content | — | — | — | — | — | ✓ | ✓ |
 
 ---
 
