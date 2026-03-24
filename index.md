@@ -77,4 +77,5 @@ Conditions test a value and return true or false, used in transitions and state 
 | Component | Description |
 |-----------|-------------|
 | [Perception Event Forwarder](/components/perception-event-forwarder) | Forwards AI perception events into the StateTree event system |
+| [Primitive Event Forwarder](/components/primitive-event-forwarder) | Forwards primitive component events (overlaps, hits, physics, input) into the StateTree event system |
 | [GAS Event Forwarder](/components/gas-event-forwarder) | Forwards GAS gameplay events and tag changes into the StateTree event system |
