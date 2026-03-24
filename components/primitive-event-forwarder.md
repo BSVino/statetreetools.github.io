@@ -29,6 +29,7 @@ All events are sent to the `UStateTreeComponent`(s) on the same actor (filtered 
 ### Overlap
 
 #### `StateTreeTools.Events.Primitive.BeginOverlap`
+**Payload:** `FPrimitiveBeginOverlapPayload`
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -40,6 +41,7 @@ All events are sent to the `UStateTreeComponent`(s) on the same actor (filtered 
 | `SweepResult` | `FHitResult` | Hit result if triggered by a sweep |
 
 #### `StateTreeTools.Events.Primitive.EndOverlap`
+**Payload:** `FPrimitiveEndOverlapPayload`
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -51,6 +53,7 @@ All events are sent to the `UStateTreeComponent`(s) on the same actor (filtered 
 ### Hit
 
 #### `StateTreeTools.Events.Primitive.Hit`
+**Payload:** `FPrimitiveHitPayload`
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -63,6 +66,7 @@ All events are sent to the `UStateTreeComponent`(s) on the same actor (filtered 
 ### Physics
 
 #### `StateTreeTools.Events.Primitive.Wake`
+**Payload:** `FPrimitiveWakePayload`
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -70,6 +74,7 @@ All events are sent to the `UStateTreeComponent`(s) on the same actor (filtered 
 | `BoneName` | `FName` | The bone that woke (skeletal meshes) |
 
 #### `StateTreeTools.Events.Primitive.Sleep`
+**Payload:** `FPrimitiveSleepPayload`
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -77,6 +82,7 @@ All events are sent to the `UStateTreeComponent`(s) on the same actor (filtered 
 | `BoneName` | `FName` | The bone that went to sleep (skeletal meshes) |
 
 #### `StateTreeTools.Events.Primitive.PhysicsStateChanged`
+**Payload:** `FPrimitivePhysicsStateChangedPayload`
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -86,7 +92,14 @@ All events are sent to the `UStateTreeComponent`(s) on the same actor (filtered 
 ### Cursor
 
 #### `StateTreeTools.Events.Primitive.BeginCursorOver`
+**Payload:** `FPrimitiveBeginCursorOverPayload`
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `SourceComponent` | `UPrimitiveComponent*` | The watched primitive |
+
 #### `StateTreeTools.Events.Primitive.EndCursorOver`
+**Payload:** `FPrimitiveEndCursorOverPayload`
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -95,6 +108,7 @@ All events are sent to the `UStateTreeComponent`(s) on the same actor (filtered 
 ### Click / Release
 
 #### `StateTreeTools.Events.Primitive.Clicked`
+**Payload:** `FPrimitiveClickedPayload`
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -102,6 +116,7 @@ All events are sent to the `UStateTreeComponent`(s) on the same actor (filtered 
 | `ButtonPressed` | `FKey` | The mouse button that was pressed |
 
 #### `StateTreeTools.Events.Primitive.Released`
+**Payload:** `FPrimitiveReleasedPayload`
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -111,9 +126,31 @@ All events are sent to the `UStateTreeComponent`(s) on the same actor (filtered 
 ### Touch
 
 #### `StateTreeTools.Events.Primitive.InputTouchBegin`
+**Payload:** `FPrimitiveInputTouchBeginPayload`
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `SourceComponent` | `UPrimitiveComponent*` | The watched primitive |
+| `FingerIndex` | `ETouchIndex::Type` | The touch finger index |
+
 #### `StateTreeTools.Events.Primitive.InputTouchEnd`
+**Payload:** `FPrimitiveInputTouchEndPayload`
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `SourceComponent` | `UPrimitiveComponent*` | The watched primitive |
+| `FingerIndex` | `ETouchIndex::Type` | The touch finger index |
+
 #### `StateTreeTools.Events.Primitive.InputTouchEnter`
+**Payload:** `FPrimitiveInputTouchEnterPayload`
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `SourceComponent` | `UPrimitiveComponent*` | The watched primitive |
+| `FingerIndex` | `ETouchIndex::Type` | The touch finger index |
+
 #### `StateTreeTools.Events.Primitive.InputTouchLeave`
+**Payload:** `FPrimitiveInputTouchLeavePayload`
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -127,7 +164,7 @@ All events are sent to the `UStateTreeComponent`(s) on the same actor (filtered 
 1. Add `UPrimitiveEventForwarder` to your actor.
 2. In the **Primitive Component** dropdown, select the primitive to watch.
 3. In your StateTree, add a transition with **On Event** set to the desired tag (e.g. `StateTreeTools.Events.Primitive.BeginOverlap`).
-4. In the transition's **Payload Struct** field, select the matching payload type. If the payload type is wrong or left unset, the event will not match and the transition will never fire.
+4. In the transition's **Payload Struct** field, select the matching payload type (e.g. `FPrimitiveBeginOverlapPayload`). If the payload type is wrong or left unset, the event will not match and the transition will never fire.
 5. Bind payload fields using the StateTree binding system.
 
 The component logs a warning and becomes inactive at runtime if the named primitive is not found on the owner.
