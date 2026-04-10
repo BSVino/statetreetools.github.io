@@ -20,6 +20,12 @@ Instructions for contributors building the plugin from the source repository, in
 
 ---
 
+## [Changelist](/changelist)
+
+User-visible functionality changes are tracked here so readers can quickly see what changed between documentation updates.
+
+---
+
 ## [Showcase](/showcase)
 
 Examples of what you can build with StateTree Tools — patrol AI, perception-driven behaviour, ability-driven state machines, and more.
