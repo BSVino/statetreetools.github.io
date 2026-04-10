@@ -7,6 +7,8 @@ title: GAS Event Forwarder
 **Plugin:** StateTreeToolsGameplayAbilitySystem
 **Class:** `UGASEventForwarder`
 
+This component is only available when Unreal's built-in **Gameplay Abilities** plugin is enabled.
+
 Bridges the Gameplay Ability System and the StateTree event system. Add this component to any actor that has an `UAbilitySystemComponent`. It handles two kinds of forwarding:
 
 - **GAS gameplay events** — maps each incoming `FGameplayEventData` to a chosen StateTree event tag.
@@ -49,10 +51,11 @@ If the tag is already absent when `BeginPlay` runs, the event fires immediately.
 
 ## Setup
 
-1. Add `UGASEventForwarder` to any actor that has an `UAbilitySystemComponent`.
-2. To forward GAS gameplay events: add entries to **Forward GAS Events to StateTree Events**, setting the GAS tag and the StateTree tag you want to raise.
-3. To react to tag changes: add tags to **Tags to Watch for Added** or **Tags to Watch for Removed**.
-4. In your StateTree, add transitions with **On Event** set to the appropriate tag (`StateTreeTools.Events.TagAdded`, `StateTreeTools.Events.TagRemoved`, or your custom mapped tag).
+1. Enable Unreal's built-in **Gameplay Abilities** plugin.
+2. Add `UGASEventForwarder` to any actor that has an `UAbilitySystemComponent`.
+3. To forward GAS gameplay events: add entries to **Forward GAS Events to StateTree Events**, setting the GAS tag and the StateTree tag you want to raise.
+4. To react to tag changes: add tags to **Tags to Watch for Added** or **Tags to Watch for Removed**.
+5. In your StateTree, add transitions with **On Event** set to the appropriate tag (`StateTreeTools.Events.TagAdded`, `StateTreeTools.Events.TagRemoved`, or your custom mapped tag).
 
 The component logs an error if no `UAbilitySystemComponent` is found on the owner when tag watching is configured.
 

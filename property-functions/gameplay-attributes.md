@@ -4,7 +4,7 @@ title: Gameplay Attributes
 
 # Gameplay Attributes
 
-Property functions for reading Gameplay Ability System (GAS) float attributes from an actor's Ability System Component. **Requires UE 5.5+.**
+Property functions for reading Gameplay Ability System (GAS) float attributes from an actor's Ability System Component. **Requires UE 5.5+ and Unreal's built-in Gameplay Abilities plugin to be enabled.**
 
 | Property Function | Description |
 |-------------------|-------------|

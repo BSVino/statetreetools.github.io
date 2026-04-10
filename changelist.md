@@ -15,6 +15,10 @@ title: Changelist
 
 ### Editor and Compile Validation Improvements
 
+- Optional GAS sub-plugin loading
+  StateTree Tools Gameplay Ability System is now optional instead of always-on.
+  The GAS sub-plugin only becomes available and loads when Unreal's built-in Gameplay Abilities plugin is enabled; otherwise StateTree Tools Core still loads normally without GAS-specific nodes.
+
 - Compile-time validation for selected events, delegates, properties, and functions
   Nodes that let you choose actor events, delegates, properties, and pure functions now validate those selections during compile.
   This catches cases where a Blueprint event, delegate, function, or property was deleted or renamed after the node was configured, instead of silently leaving an invalid selection behind.

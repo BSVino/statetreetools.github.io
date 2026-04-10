@@ -27,13 +27,15 @@ Purchase StateTree Tools on Fab and add it to your engine version from the Epic 
 Open your project in Unreal Engine, then go to **Edit → Plugins**. Search for **StateTree Tools** and enable whichever sub-plugins you need:
 
 - **StateTree Tools Core** — tasks, property functions, and components for general use
-- **StateTree Tools Gameplay Ability System** — GAS-specific tasks and conditions (requires the Gameplay Abilities plugin)
+- **StateTree Tools Gameplay Ability System** — GAS-specific tasks, conditions, property functions, and components. This sub-plugin only becomes available when Unreal's built-in **Gameplay Abilities** plugin is enabled.
 
 Restart the editor when prompted.
 
 ## Enable dependencies
 
 StateTree Tools Core requires the **GameplayStateTree** plugin. StateTree Tools Gameplay Ability System additionally requires **Gameplay Abilities**. Both are built-in Unreal plugins — enable them in the same Plugins window if they are not already on.
+
+If **Gameplay Abilities** is disabled, StateTree Tools still loads normally, but the **StateTree Tools Gameplay Ability System** sub-plugin and all GAS-specific nodes stay unavailable.
 
 ## Start building
 
