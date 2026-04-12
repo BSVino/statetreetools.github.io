@@ -11,6 +11,12 @@ title: Changelist
 - [CallComponentDelegate](/tasks/call-component-delegate)
   Added a task for broadcasting Blueprint-assignable multicast delegates directly on a bound actor component, with the same parameter bag workflow as [CallActorDelegate](/tasks/call-actor-delegate).
 
+- [CallComponentEvent](/tasks/call-component-event)
+  Added a task for calling Blueprint events and functions directly on a bound actor component, mirroring [CallActorEvent](/tasks/call-actor-event) without needing a component name lookup on an actor.
+
+- [SetComponentProperty](/tasks/set-component-property)
+  Added a task for setting exposed properties directly on a bound actor component, mirroring [SetActorProperty](/tasks/set-actor-property) without needing a component name lookup on an actor.
+
 ### Property Functions
 
 - [GetComponentByClass](/property-functions/get-component-by-class)
@@ -47,7 +53,7 @@ title: Changelist
   Calls any delegate on any actor or its components.
 
 - [StartActionAndWait](/tasks/start-action-and-wait)
-  Calls an event on an actor or component, then keeps the task active until the event calls the `Finish Action` Blueprint node.
+  Calls an event on an actor or component, then keeps the task active until the event calls the Finish Action Blueprint node.
 
 - [PlayMontage](/tasks/play-montage)
   Plays animation montages from StateTree tasks.
