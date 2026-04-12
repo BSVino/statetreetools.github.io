@@ -8,6 +8,8 @@ Property functions for calling `BlueprintPure` functions on actors or their comp
 
 Every variant provides a custom details panel. Set **ActorClass** to populate a searchable dropdown of pure functions whose return type matches the variant. Set **ComponentName** if the function lives on a component rather than the actor directly.
 
+If **ActorClass** and **ComponentName** are set, compile validation also checks that the selected component and pure function still exist on that actor class.
+
 | Property Function | Description |
 |-------------------|-------------|
 | [Call Pure Function (Bool)](/property-functions/call-pure-function-bool) | Return value exposed as `bool` |

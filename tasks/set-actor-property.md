@@ -43,5 +43,6 @@ A common pattern is to set a property to one value on enter and restore it to an
 If the actor is invalid, the component is not found, the named property does not exist, or there is a type mismatch at runtime, the task will fail. You can control whether a failure causes the task to return **Failed** or **Succeeded** using the **Error Means Failure** option.
 
 The StateTree editor will warn you at compile time if neither enter nor exit firing is enabled.
+If Actor Class and Component Name are set, the editor also validates that the selected component and property still exist on that actor class.
 
 [← Back to Utilities \| Properties](/tasks/properties) · [← Back to home](/)

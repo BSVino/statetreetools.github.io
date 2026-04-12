@@ -69,6 +69,7 @@ If enabled, the task automatically fails after **Timeout Seconds** if `Finish Ac
 ## Error Handling
 
 If the actor is invalid, the component is not found, or the named event does not exist at runtime, the task will fail. You can control whether this returns **Failed** or **Succeeded** using the **Error Means Failure** option.
+If Actor Class and Component Name are set, the editor also validates that the selected component and event still exist on that actor class.
 
 ---
 

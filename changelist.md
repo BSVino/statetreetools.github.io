@@ -26,6 +26,11 @@ title: Changelist
   Nodes that let you choose actor events, delegates, properties, and pure functions now validate those selections during compile.
   This catches cases where a Blueprint event, delegate, function, or property was deleted or renamed after the node was configured, instead of silently leaving an invalid selection behind.
 
+### Property Functions
+
+- GetComponentByClass
+  Added a property function that mirrors Unreal's Blueprint Get Component By Class node and returns the first matching component on a bound actor.
+
 ## Version 1.0
 
 ### Tasks

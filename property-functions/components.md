@@ -11,5 +11,6 @@ Property functions for accessing actor components. **Requires UE 5.5+.**
 | Property Function | Description |
 |-------------------|-------------|
 | [Get Root Component](/property-functions/get-root-component) | Get the root scene component of an actor |
+| [Get Component By Class](/property-functions/get-component-by-class) | Get the first actor component that matches a class |
 
 [← Back to home](/)
