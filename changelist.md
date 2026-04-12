@@ -1,4 +1,4 @@
----
+﻿---
 title: Changelist
 ---
 
@@ -11,9 +11,12 @@ title: Changelist
 - Primitive Event Forwarder
   Forwards primitive component events into StateTree components on the same actor, similar to how the existing perception and GAS forwarders work.
   Includes support for begin/end overlap, hit, wake/sleep, physics state changed, cursor over, click/release, and touch begin/end/enter/leave events.
-  Sends typed `FStateTreeEvent` payloads tagged under the `StateTreeTools.Events.Primitive.*` namespace.
+  Sends typed FStateTreeEvent payloads tagged under the StateTreeTools.Events.Primitive.* namespace.
 
 ### Editor and Compile Validation Improvements
+
+- CallComponentDelegate
+  Added a task for broadcasting Blueprint-assignable multicast delegates directly on a bound actor component, with the same parameter bag workflow as CallActorDelegate.
 
 - Optional GAS sub-plugin loading
   StateTree Tools Gameplay Ability System is now optional instead of always-on.
@@ -37,7 +40,7 @@ title: Changelist
   Calls any delegate on any actor or its components.
 
 - StartActionAndWait
-  Calls an event on an actor or component, then keeps the task active until the event calls the `Finish Action` Blueprint node.
+  Calls an event on an actor or component, then keeps the task active until the event calls the Finish Action Blueprint node.
 
 - PlayMontage
   Plays animation montages from StateTree tasks.
@@ -46,7 +49,7 @@ title: Changelist
   Audio playback tasks for world-space and 2D sounds.
 
 - DrawDebugLine, DrawDebugPoint, DrawDebugDirectionalArrow, DrawDebugBox, DrawDebugSphere, and more
-  Includes the full set of debug draw helpers, plus `FlushPersistentDebugLines` and `FlushDebugStrings`.
+  Includes the full set of debug draw helpers, plus FlushPersistentDebugLines and FlushDebugStrings.
 
 - GetRandomReachablePointInRadius
   Finds a random reachable navigation point for wandering and patrol behaviors.

@@ -1,4 +1,4 @@
----
+﻿---
 title: Call Actor Delegate
 ---
 
@@ -40,4 +40,4 @@ By default the delegate is broadcast when the state is **entered**. You can chan
 
 If the actor is invalid, the component is not found, or the named delegate does not exist at runtime, the task will fail. You can control whether a failure causes the task to return **Failed** or **Succeeded** using the **Error Means Failure** option.
 
-[← Back to Utilities \| Events](/tasks/events) · [← Back to home](/)
+[← Back to Utilities | Events](/tasks/events) · [← Back to home](/)
