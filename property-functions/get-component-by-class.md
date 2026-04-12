@@ -6,6 +6,7 @@ title: Get Component By Class
 
 **Plugin:** StateTreeToolsCore
 **Category:** Components
+**Available since:** StateTree Tools 2.0
 
 Returns the first component on an actor that matches the specified component class. This mirrors Unreal's Blueprint **Get Component By Class** node and is useful when you want to retrieve a component reference without hard-coding a component name.
 

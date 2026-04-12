@@ -6,6 +6,16 @@ title: Changelist
 
 ## Version 2.0 (Development Branch)
 
+### Tasks
+
+- [CallComponentDelegate](/tasks/call-component-delegate)
+  Added a task for broadcasting Blueprint-assignable multicast delegates directly on a bound actor component, with the same parameter bag workflow as [CallActorDelegate](/tasks/call-actor-delegate).
+
+### Property Functions
+
+- [GetComponentByClass](/property-functions/get-component-by-class)
+  Added a property function that mirrors Unreal's Blueprint [Get Component By Class](/property-functions/get-component-by-class) node and returns the first matching component on a bound actor.
+
 ### Components
 
 - [Primitive Event Forwarder](/components/primitive-event-forwarder)
@@ -15,9 +25,6 @@ title: Changelist
 
 ### Editor and Compile Validation Improvements
 
-- [CallComponentDelegate](/tasks/call-component-delegate)
-  Added a task for broadcasting Blueprint-assignable multicast delegates directly on a bound actor component, with the same parameter bag workflow as [CallActorDelegate](/tasks/call-actor-delegate).
-
 - Optional GAS sub-plugin loading
   StateTree Tools Gameplay Ability System is now optional instead of always-on.
   The GAS sub-plugin only becomes available and loads when Unreal's built-in Gameplay Abilities plugin is enabled; otherwise StateTree Tools Core still loads normally without GAS-specific nodes.
@@ -25,11 +32,6 @@ title: Changelist
 - Compile-time validation for selected events, delegates, properties, and functions
   Nodes that let you choose actor events, delegates, properties, and pure functions now validate those selections during compile.
   This catches cases where a Blueprint event, delegate, function, or property was deleted or renamed after the node was configured, instead of silently leaving an invalid selection behind.
-
-### Property Functions
-
-- [GetComponentByClass](/property-functions/get-component-by-class)
-  Added a property function that mirrors Unreal's Blueprint [Get Component By Class](/property-functions/get-component-by-class) node and returns the first matching component on a bound actor.
 
 ## Version 1.0
 
