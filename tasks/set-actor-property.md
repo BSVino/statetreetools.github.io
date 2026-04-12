@@ -34,7 +34,7 @@ Once a property is selected, a value field appears matching the property's type.
 
 By default the property is set when the state is **entered**. You can change this to fire on **exit** instead, or on **both** enter and exit. See [Enter / Exit Firing](/enter-exit-firing) for a full explanation of how this works across all tasks.
 
-A common pattern is to set a property to one value on enter and restore it to another on exit, using two Set Actor Property tasks in the same state with opposite timing settings.
+A common pattern is to set a property to one value on enter and restore it to another on exit, using two [Set Actor Property](/tasks/set-actor-property) tasks in the same state with opposite timing settings.
 
 ---
 

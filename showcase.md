@@ -16,7 +16,7 @@ A simple AI built entirely with Unreal StateTree and StateTree Tools — no Blue
 
 ![Call Actor Event SetFocus — setup expanded](/assets/showcase/Screenshot 2026-03-18 105623.png)
 
-**Call Actor Event** lets you call any event or function on an actor or any of its components directly from a StateTree state. Set the actor, and the actor's class is determined automatically. Then pick the event from a searchable dropdown. Here, `K2_SetFocus` is called on enter, with the `New Focus` parameter bound to the perceived actor from the perception event payload.
+[Call Actor Event](/tasks/call-actor-event) lets you call any event or function on an actor or any of its components directly from a StateTree state. Set the actor, and the actor's class is determined automatically. Then pick the event from a searchable dropdown. Here, `K2_SetFocus` is called on enter, with the `New Focus` parameter bound to the perceived actor from the perception event payload.
 
 Any event or function you have written in Blueprint or C++ will also appear in the list. For example, switching to `K2_SetActorLocation` exposes its own parameters inline:
 
@@ -28,7 +28,7 @@ You can also configure when the event fires — on enter, on exit, or both. Here
 
 Tasks are started top-down but stopped bottom-up. The ClearFocus task sits above Move To so that Move To stops first and ClearFocus fires after.
 
-There are also tasks for calling delegates and setting properties:
+There are also tasks for [Call Actor Delegate](/tasks/call-actor-delegate) and [Set Actor Property](/tasks/set-actor-property):
 
 ![Call Actor Delegate example](/assets/showcase/Screenshot 2026-03-18 110649.png)
 
@@ -38,7 +38,7 @@ There are also tasks for calling delegates and setting properties:
 
 ## Call Pure Function
 
-**Call Pure Function** is a property function — it calls any `BlueprintPure` function on an actor or its components and exposes the return value as a binding anywhere a value can be bound in the StateTree editor. Here the Move To task's **Target Actor** is bound to `GetFocusActor` on the AI Controller, so it always chases whoever has focus without needing to store the reference manually:
+[Call Pure Function](/property-functions/call-pure-function) is a property function — it calls any `BlueprintPure` function on an actor or its components and exposes the return value as a binding anywhere a value can be bound in the StateTree editor. Here the Move To task's **Target Actor** is bound to `GetFocusActor` on the AI Controller, so it always chases whoever has focus without needing to store the reference manually:
 
 ![Move To with Call Pure Function GetFocusActor](/assets/showcase/Screenshot 2026-03-18 111100.png)
 
@@ -46,11 +46,11 @@ There are also tasks for calling delegates and setting properties:
 
 ## Start Action And Wait
 
-For cases where you want to write Blueprint logic, **Start Action And Wait** lets you tie that code into the StateTree without writing any glue code.
+For cases where you want to write Blueprint logic, [Start Action And Wait](/tasks/start-action-and-wait) lets you tie that code into the StateTree without writing any glue code.
 
 ![Start Action And Wait task configuration](/assets/showcase/Screenshot 2026-03-18 115310.png)
 
-Create a Blueprint event whose first parameter is a `StateTreeToolsActionPayload`. Start Action And Wait calls that event, passes through any additional parameters, and keeps the task running until your Blueprint calls `Finish Action`:
+Create a Blueprint event whose first parameter is a `StateTreeToolsActionPayload`. [Start Action And Wait](/tasks/start-action-and-wait) calls that event, passes through any additional parameters, and keeps the task running until your Blueprint calls `Finish Action`:
 
 ![Blueprint: finishing the action](/assets/showcase/Screenshot 2026-03-18 120152.png)
 
@@ -62,7 +62,7 @@ The payload has a **Phase** field — `Starting` or `Stopping`. If the state tra
 
 ## Perception
 
-The AI uses Unreal's standard AI Perception system. To get those events into the StateTree, add a **Perception Event Forwarder** component alongside the AIPerception component on the same actor:
+The AI uses Unreal's standard AI Perception system. To get those events into the StateTree, add a [Perception Event Forwarder](/components/perception-event-forwarder) component alongside the AIPerception component on the same actor:
 
 ![PerceptionEventForwarder in the component list](/assets/showcase/Screenshot 2026-03-18 103728.png)
 
@@ -82,7 +82,7 @@ The Chase state transitions out when perception is lost or when Move To complete
 
 The **MoveToNewPosition** state uses three tasks:
 
-- **Get Random Reachable Point In Radius** — finds a random navigable point and exposes it as an output variable.
+- [Get Random Reachable Point In Radius](/tasks/get-random-reachable-point-in-radius) — finds a random navigable point and exposes it as an output variable.
 - **Draw Debug Sphere** — visualises the target point. All Draw Debug utilities are available through the plugin.
 - **Move To** — the standard Unreal Move To task, with its Destination bound to the output above.
 
@@ -94,7 +94,7 @@ The **MoveToNewPosition** state uses three tasks:
 
 ![Play Sound and Spawn Niagara task details](/assets/showcase/Screenshot 2026-03-18 105142.png)
 
-On entering Chase, **Play Sound At Location** fires a sound and **Spawn System Attached** spawns a Niagara particle system. The Niagara task completes when the particle system finishes. If the state exits early you can configure whether particles are killed immediately or allowed to complete.
+On entering Chase, [Play Sound At Location](/tasks/play-sound-at-location) fires a sound and [Spawn System Attached](/tasks/spawn-system-attached) spawns a Niagara particle system. The Niagara task completes when the particle system finishes. If the state exits early you can configure whether particles are killed immediately or allowed to complete.
 
 ---
 
@@ -102,7 +102,7 @@ On entering Chase, **Play Sound At Location** fires a sound and **Spawn System A
 
 ![Play Montage task](/assets/showcase/Screenshot 2026-03-18 114330.png)
 
-The **Bounce** state plays an animation montage and completes when it finishes, at which point the tree returns to Patrol.
+The **Bounce** state plays a [Play Montage](/tasks/play-montage) task and completes when it finishes, at which point the tree returns to Patrol.
 
 ---
 

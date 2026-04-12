@@ -8,6 +8,12 @@ A plugin for Unreal Engine 5 that extends the StateTree system with ready-made t
 
 ---
 
+## [Showcase](/showcase)
+
+Examples of what you can build with StateTree Tools — patrol AI, perception-driven behaviour, ability-driven state machines, and more.
+
+---
+
 ## [Getting Started](/getting-started)
 
 Install the plugin, enable it in your project, and set up your first StateTree using StateTree Tools tasks.
@@ -23,12 +29,6 @@ Instructions for contributors building the plugin from the source repository, in
 ## [Changelist](/changelist)
 
 User-visible functionality changes are tracked here so readers can quickly see what changed between documentation updates.
-
----
-
-## [Showcase](/showcase)
-
-Examples of what you can build with StateTree Tools — patrol AI, perception-driven behaviour, ability-driven state machines, and more.
 
 ---
 

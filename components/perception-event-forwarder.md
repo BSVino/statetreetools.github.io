@@ -48,7 +48,7 @@ The name of the `UStateTreeComponent` on the owner to send events to. Leave as `
 ## Setup
 
 1. Add a `UAIPerceptionComponent` to your AI character or controller and configure the senses you need (e.g. Sight, Hearing).
-2. Add `UPerceptionEventForwarder` to the same actor.
+2. Add [`UPerceptionEventForwarder`](/components/perception-event-forwarder) to the same actor.
 3. In your StateTree, add a transition with **On Event** set to `StateTreeTools.Events.Perception.TargetUpdated` or `StateTreeTools.Events.Perception.TargetForgotten`.
 4. In the transition's **Payload Struct** field, select the matching payload type — `TargetPerceptionUpdatedPayload` or `TargetPerceptionForgottenPayload`. If the payload type is wrong or left unset, the event will not match and the transition will never fire.
 5. Bind the event payload fields (e.g. `Payload.Actor`, `Payload.Stimulus.bWasSuccessfullySensed`, `Payload.Attitude`) using the StateTree binding system.

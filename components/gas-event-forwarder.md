@@ -52,7 +52,7 @@ If the tag is already absent when `BeginPlay` runs, the event fires immediately.
 ## Setup
 
 1. Enable Unreal's built-in **Gameplay Abilities** plugin.
-2. Add `UGASEventForwarder` to any actor that has an `UAbilitySystemComponent`.
+2. Add [`UGASEventForwarder`](/components/gas-event-forwarder) to any actor that has an `UAbilitySystemComponent`.
 3. To forward GAS gameplay events: add entries to **Forward GAS Events to StateTree Events**, setting the GAS tag and the StateTree tag you want to raise.
 4. To react to tag changes: add tags to **Tags to Watch for Added** or **Tags to Watch for Removed**.
 5. In your StateTree, add transitions with **On Event** set to the appropriate tag (`StateTreeTools.Events.TagAdded`, `StateTreeTools.Events.TagRemoved`, or your custom mapped tag).
