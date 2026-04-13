@@ -8,6 +8,9 @@ title: Changelist
 
 ### Tasks
 
+- [CreateWidget](/tasks/create-widget)
+  Added a task for creating `UUserWidget` instances from StateTree, with support for expose-on-spawn properties, optional viewport insertion, and widget output binding.
+
 - [CallComponentDelegate](/tasks/call-component-delegate)
   Added a task for broadcasting Blueprint-assignable multicast delegates directly on a bound actor component, with the same parameter bag workflow as [CallActorDelegate](/tasks/call-actor-delegate).
 

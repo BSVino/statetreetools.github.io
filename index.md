@@ -1,16 +1,16 @@
----
+﻿---
 title: StateTree Tools
 ---
 
 # StateTree Tools
 
-A plugin for Unreal Engine 5 that extends the StateTree system with ready-made tasks, components, and utilities — so you can build AI and gameplay logic faster without writing custom C++.
+A plugin for Unreal Engine 5 that extends the StateTree system with ready-made tasks, components, and utilities - so you can build AI and gameplay logic faster without writing custom C++.
 
 ---
 
 ## [Showcase](/showcase)
 
-Examples of what you can build with StateTree Tools — patrol AI, perception-driven behaviour, ability-driven state machines, and more.
+Examples of what you can build with StateTree Tools - patrol AI, perception-driven behaviour, ability-driven state machines, and more.
 
 ---
 
@@ -43,6 +43,7 @@ Tasks run when a state is entered or exited and can keep the state alive while t
 | [Debug](/tasks/debug) | Draw debug shapes; flush debug lines and strings |
 | [Niagara](/tasks/niagara) | Spawn and manage Niagara particle systems |
 | [Navigation](/tasks/navigation) | Find random reachable points for patrol and wandering |
+| [UI](/tasks/ui) | Create and manage user widgets |
 | [Gameplay \| Actions](/tasks/actions) | Drive async Blueprint logic from a StateTree state |
 | [Gameplay \| StateTree](/tasks/statetree) | Send events with typed payloads to StateTree components |
 | [Utilities \| Events](/tasks/events) | Call Blueprint events and dispatchers on actors by name |
