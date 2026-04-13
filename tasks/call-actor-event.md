@@ -1,4 +1,4 @@
----
+﻿---
 title: Call Actor Event
 ---
 
@@ -17,7 +17,7 @@ Calls any Blueprint event or function on an actor (or one of its components) whe
 Bind this to the actor you want to call the function on. This is typically bound from the StateTree's context or from a parent state.
 
 ### Actor Class
-Set this to the Blueprint class of the actor. This is used in the editor to populate the function dropdown. It does not affect runtime behaviour — it is only needed so the editor knows which functions to list.
+Set this to the Blueprint class of the actor. This is used in the editor to populate the function dropdown. It does not affect runtime behaviour; it is only needed so the editor knows which functions to list.
 
 ### Component Name *(optional)*
 If the function lives on a component rather than the actor itself, enter the component's name here. Leave it empty to call the function directly on the actor.
@@ -27,6 +27,8 @@ Select the function to call from the dropdown. The list is populated from the Ac
 
 ### Parameters
 Once an event is selected, its input parameters appear here automatically. Fill them in directly or bind them to values elsewhere in the StateTree.
+
+StateTree Tools **2.0+** adds array support for event parameters here, so array-valued Blueprint inputs can be supplied directly through the node.
 
 ---
 
@@ -41,4 +43,4 @@ By default the function is called when the state is **entered**. You can change 
 If the actor is invalid, the component is not found, or the named function does not exist at runtime, the task will fail. You can control whether a failure causes the task to return **Failed** or **Succeeded** using the **Error Means Failure** option.
 If Actor Class and Component Name are set, the editor also validates that the selected component and event still exist on that actor class.
 
-[← Back to Utilities \| Events](/tasks/events) · [← Back to home](/)
+[← Back to Utilities | Events](/tasks/events) · [← Back to home](/)

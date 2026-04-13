@@ -1,4 +1,4 @@
----
+﻿---
 title: Set Actor Property
 ---
 
@@ -7,7 +7,7 @@ title: Set Actor Property
 **Plugin:** StateTreeToolsCore
 **Category:** Utilities | Properties
 
-Sets any exposed property on an actor or one of its components when the state is entered, exited, or both. The property and its value are configured directly in the StateTree editor — no custom task or Blueprint function needed.
+Sets any exposed property on an actor or one of its components when the state is entered, exited, or both. The property and its value are configured directly in the StateTree editor; no custom task or Blueprint function needed.
 
 ---
 
@@ -28,6 +28,8 @@ Select the property to set from the dropdown. The list is populated from the Act
 ### Value
 Once a property is selected, a value field appears matching the property's type. Fill it in directly or bind it to a value elsewhere in the StateTree.
 
+StateTree Tools **2.0+** adds array support here, so array properties can be set directly through the node.
+
 ---
 
 ## When to Fire
@@ -45,4 +47,4 @@ If the actor is invalid, the component is not found, the named property does not
 The StateTree editor will warn you at compile time if neither enter nor exit firing is enabled.
 If Actor Class and Component Name are set, the editor also validates that the selected component and property still exist on that actor class.
 
-[← Back to Utilities \| Properties](/tasks/properties) · [← Back to home](/)
+[← Back to Utilities | Properties](/tasks/properties) · [← Back to home](/)

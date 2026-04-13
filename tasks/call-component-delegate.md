@@ -6,6 +6,7 @@ title: Call Component Delegate
 
 **Plugin:** StateTreeToolsCore
 **Category:** Utilities | Events
+**Availability:** StateTree Tools **2.0+**
 
 Broadcasts a Blueprint event dispatcher (multicast delegate) on a bound component when the state is entered, exited, or both. Parameters are configured directly in the StateTree editor and can be bound to other values in the tree.
 
@@ -26,6 +27,8 @@ Select the event dispatcher to broadcast from the dropdown. The list is populate
 
 ### Parameters
 Once a delegate is selected, its parameters appear here automatically. Fill them in directly or bind them to values elsewhere in the StateTree.
+
+StateTree Tools **2.0+** adds array support for delegate parameters here, so array-valued delegate inputs can be supplied directly through the node.
 
 ---
 

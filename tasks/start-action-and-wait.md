@@ -1,4 +1,4 @@
----
+﻿---
 title: Start Action And Wait
 ---
 
@@ -7,7 +7,7 @@ title: Start Action And Wait
 **Plugin:** StateTreeToolsCore
 **Category:** Gameplay | Events
 
-Calls a Blueprint event on an actor and keeps the state alive until the Blueprint signals that the action is complete. This is the primary way to drive async Blueprint logic — such as playing a cutscene, running a custom animation sequence, or waiting for player input — directly from a StateTree state.
+Calls a Blueprint event on an actor and keeps the state alive until the Blueprint signals that the action is complete. This is the primary way to drive async Blueprint logic, such as playing a cutscene, running a custom animation sequence, or waiting for player input, directly from a StateTree state.
 
 ---
 
@@ -15,7 +15,7 @@ Calls a Blueprint event on an actor and keeps the state alive until the Blueprin
 
 When the state is entered, the task calls the configured Blueprint event and passes it an `FStateTreeTools_ActionPayload` containing a **Phase** (`Starting`) and a **Handle**. The state remains active until your Blueprint calls `Finish Action` with that handle.
 
-If the state is exited before the Blueprint finishes — because a higher-priority transition fired — the task calls the same event again with **Phase = Stopping**, giving your Blueprint a chance to clean up (stop a sound, end an animation, etc.). The task then completes regardless of whether `Finish Action` is called during the stopping phase.
+If the state is exited before the Blueprint finishes, because a higher-priority transition fired, the task calls the same event again with **Phase = Stopping**, giving your Blueprint a chance to clean up (stop a sound, end an animation, etc.). The task then completes regardless of whether `Finish Action` is called during the stopping phase.
 
 ---
 
@@ -28,7 +28,7 @@ Inside the event:
 1. Branch on **Phase**: handle `Starting` to begin your work, and `Stopping` to cancel or clean up.
 2. When your async work is done, call **Finish Action** (from the StateTree Tools function library), passing the **Handle** from the payload and whether the action succeeded.
 
-`Finish Action` can be called from anywhere — a timer, an animation notify, a delegate — as long as you have the handle.
+`Finish Action` can be called from anywhere, a timer, an animation notify, a delegate, as long as you have the handle.
 
 ---
 
@@ -48,6 +48,8 @@ Select the event to call from the dropdown. Only Blueprint events whose first pa
 
 ### Parameters
 Any input parameters on the event beyond the payload appear here automatically and can be filled in or bound to values elsewhere in the StateTree.
+
+StateTree Tools **2.0+** adds array support for these additional event parameters.
 
 ### Use Timeout
 If enabled, the task automatically fails after **Timeout Seconds** if `Finish Action` has not been called. Useful as a safeguard against Blueprint logic that never completes. Whether a timeout counts as a failure or a success is controlled by the **Error Means Failure** option.
@@ -73,4 +75,4 @@ If Actor Class and Component Name are set, the editor also validates that the se
 
 ---
 
-[← Back to Gameplay \| Actions](/tasks/actions) · [← Back to home](/)
+[← Back to Gameplay | Actions](/tasks/actions) · [← Back to home](/)

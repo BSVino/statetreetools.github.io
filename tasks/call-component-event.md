@@ -28,6 +28,8 @@ Select the function to call from the dropdown. The list is populated from the Co
 ### Parameters
 Once an event is selected, its parameters appear here automatically. Fill them in directly or bind them to values elsewhere in the StateTree.
 
+StateTree Tools **2.0+** adds array support for event parameters here, so array-valued component event inputs can be supplied directly through the node.
+
 ---
 
 ## When to Fire

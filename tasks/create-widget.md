@@ -23,6 +23,8 @@ Optional owning player for the widget. Bind this when the widget should belong t
 ### Expose On Spawn Properties
 Automatically populated from the selected **Widget Class**. Any widget properties marked **Expose on Spawn** appear here and can be filled in directly or bound from elsewhere in the StateTree.
 
+StateTree Tools **2.0+** adds array support for expose-on-spawn properties, so array-valued widget inputs can be supplied directly through this section.
+
 ### Add To Viewport
 When enabled, the created widget is immediately added to the viewport.
 
@@ -49,6 +51,6 @@ The task creates the widget and succeeds immediately after creation. Earlier Sta
 
 ## Error Handling
 
-If the widget class is invalid, widget creation fails, or the expose-on-spawn property bag no longer matches the selected widget class at runtime, the task will fail. You can control whether that produces **Failed** or **Succeeded** using **Error Means Failure**.
+If the widget class is invalid, widget creation fails, or the expose-on-spawn properties no longer match the selected widget class at runtime, the task will fail. You can control whether that produces **Failed** or **Succeeded** using **Error Means Failure**.
 
 [← Back to UI](/tasks/ui) · [← Back to home](/)

@@ -28,6 +28,8 @@ Select the property to set from the dropdown. The list is populated from the Com
 ### Property
 Once a property is selected, a matching value field appears here automatically. Fill it in directly or bind it from elsewhere in the StateTree.
 
+StateTree Tools **2.0+** adds array support here, so array properties can be set directly through the node.
+
 ---
 
 ## When to Set

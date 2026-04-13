@@ -12,7 +12,7 @@ title: Changelist
   Added a task for creating `UUserWidget` instances from StateTree, with support for expose-on-spawn properties, optional viewport insertion, and widget output binding.
 
 - [CallComponentDelegate](/tasks/call-component-delegate)
-  Added a task for broadcasting Blueprint-assignable multicast delegates directly on a bound actor component, with the same parameter bag workflow as [CallActorDelegate](/tasks/call-actor-delegate).
+  Added a task for broadcasting Blueprint-assignable multicast delegates directly on a bound actor component, with the same delegate input workflow as [CallActorDelegate](/tasks/call-actor-delegate).
 
 - [CallComponentEvent](/tasks/call-component-event)
   Added a task for calling Blueprint events and functions directly on a bound actor component, mirroring [CallActorEvent](/tasks/call-actor-event) without needing a component name lookup on an actor.
@@ -41,6 +41,10 @@ title: Changelist
 - Compile-time validation for selected events, delegates, properties, and functions
   Nodes that let you choose actor events, delegates, properties, and pure functions now validate those selections during compile.
   This catches cases where a Blueprint event, delegate, function, or property was deleted or renamed after the node was configured, instead of silently leaving an invalid selection behind.
+
+- Array support for task inputs
+  Task inputs for event calls, delegate calls, property setting, and Create Widget now support array values.
+  This includes event parameters for [CallActorEvent](/tasks/call-actor-event), [CallActorDelegate](/tasks/call-actor-delegate), [StartActionAndWait](/tasks/start-action-and-wait), [CallComponentEvent](/tasks/call-component-event), [CallComponentDelegate](/tasks/call-component-delegate), property values for [SetActorProperty](/tasks/set-actor-property) and [SetComponentProperty](/tasks/set-component-property), and expose-on-spawn widget properties for [Create Widget](/tasks/create-widget).
 
 ## Version 1.0
 
