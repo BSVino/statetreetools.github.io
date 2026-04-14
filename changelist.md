@@ -11,6 +11,10 @@ title: Changelist
 - [CreateWidget](/tasks/create-widget)
   Added a task for creating `UUserWidget` instances from StateTree, with support for expose-on-spawn properties, optional viewport insertion, and widget output binding.
 
+- [BindWidgetEvent](/tasks/bind-widget-event)
+  Added a UI task that listens to one selected widget event on a bound widget and forwards it into StateTree as either a delegate trigger or a typed StateTree event.
+  Works with widgets created by [Create Widget](/tasks/create-widget) or any other bound `UUserWidget`, filters the target widget picker down to widgets with supported bindable events, supports named widgets added later at runtime, supports regular buttons and Common UI buttons, shows the payload type for StateTree event mode, and shows a legend for which outputs are populated in delegate mode.
+
 - [CallComponentDelegate](/tasks/call-component-delegate)
   Added a task for broadcasting Blueprint-assignable multicast delegates directly on a bound actor component, with the same delegate input workflow as [CallActorDelegate](/tasks/call-actor-delegate).
 
