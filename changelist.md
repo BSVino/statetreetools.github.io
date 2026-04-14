@@ -38,6 +38,9 @@ title: Changelist
 - [GetComponentByClass](/property-functions/get-component-by-class)
   Added a property function that mirrors Unreal's Blueprint [Get Component By Class](/property-functions/get-component-by-class) node and returns the first matching component on a bound actor.
 
+- [GetPlayerController](/property-functions/get-player-controller) *(Game category)*
+  Added a property function that mirrors Unreal's Blueprint Get Player Controller node. Takes a player index and returns the corresponding `APlayerController`.
+
 ### Components
 
 - [Primitive Event Forwarder](/components/primitive-event-forwarder)

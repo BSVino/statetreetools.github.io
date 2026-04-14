@@ -67,6 +67,7 @@ Property functions compute a value each time a binding is evaluated.
 | Category | Description |
 |----------|-------------|
 | [Components](/property-functions/components) | Get root component and other component accessors |
+| [Game](/property-functions/game) | Access game-level objects such as player controllers |
 | [Math \| Float](/property-functions/math-float) | Arithmetic, comparisons, trigonometry, and general float math |
 | [Math \| Vector](/property-functions/math-vector) | Vector arithmetic, measurement, and conversion |
 | [Utilities](/property-functions/utilities) | String conversion and general value utilities |
