@@ -8,8 +8,7 @@ A plugin for Unreal Engine 5 that extends the StateTree system with ready-made t
 
 > **Hey you!**
 > Enjoying State Tree Tools? Unsure about whether you want to buy? I want to hear from you.
-> [support@lunarworkshop.com](mailto:support@lunarworkshop.com)
-> with questions and suggestions.
+> Mail [support@lunarworkshop.com](mailto:support@lunarworkshop.com) with questions and suggestions.
 
 ---
 
