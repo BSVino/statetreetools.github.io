@@ -6,7 +6,11 @@ title: StateTree Tools
 
 A plugin for Unreal Engine 5 that extends the StateTree system with ready-made tasks, components, and utilities - so you can build AI and gameplay logic faster without writing custom C++.
 
-**Hey you!** Enjoying State Tree Tools? Unsure about whether you want to buy? I want to hear from you. Mail support@lunarworkshop.com with questions and suggestions!
+> [!NOTE]
+> **Hey you!**
+> Enjoying State Tree Tools? Unsure about whether you want to buy? I want to hear from you.
+> [support@lunarworkshop.com](mailto:support@lunarworkshop.com)
+> with questions and suggestions.
 
 ---
 
