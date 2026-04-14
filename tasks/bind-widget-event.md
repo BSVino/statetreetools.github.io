@@ -20,7 +20,7 @@ Use one task instance per forwarded UI event. If you want to react to several bu
 Bind this to the root `UUserWidget` that contains the widget you want to listen to. This can come from [Create Widget](/tasks/create-widget) or from any other widget reference you already have.
 
 ### Root Widget Class
-Used in the editor to discover named widgets and validate the selected event. It does not control runtime lookup.
+Used in the editor to discover named widgets and validate the selected event. It does not control runtime lookup. The selected target widget still needs to already exist when the task enters.
 
 ### Target Widget
 Select the named widget to listen to from the dropdown. Entries are shown as `WidgetName (WidgetClass)`.
@@ -32,6 +32,7 @@ Select which event on that widget should be forwarded.
 
 The following built-in UMG controls are supported:
 - Button clicked, pressed, and released, including Common UI buttons based on `UCommonButtonBase`
+- Common UI buttons based on `UCommonButtonBase`: clicked
 - CheckBox state changed
 - Editable text changed and committed
 - Slider value changed
@@ -67,6 +68,7 @@ These are populated for every supported widget event:
 
 ### Event-specific Outputs
 Additional outputs depend on the selected widget event:
+- Common UI buttons based on `UCommonButtonBase`: clicked
 - CheckBox state changed: `BoolValue`
 - Text changed: `TextValue`
 - Text committed: `TextValue`, `CommitMethod`
@@ -77,13 +79,16 @@ Additional outputs depend on the selected widget event:
 
 `SelectionType` uses `ESelectInfo::Type`.
 
+Common UI buttons currently support the click event. Pressed and released remain regular `UButton`-only events in BindWidgetEvent.
+
 ---
 
 ## StateTree Event Payloads
 When **Output Mode** is **Send StateTree Event**, the payload type is chosen automatically from the selected widget event.
 
 Examples:
-- Button events send a button payload with the triggering widget and widget name
+- Regular button events and Common UI button click events send a button payload with the triggering widget and widget name
+- Common UI buttons based on `UCommonButtonBase`: clicked
 - CheckBox state changed sends a payload with the widget, widget name, and checked state
 - Text changed sends a payload with the widget, widget name, and text
 - Text committed sends a payload with the widget, widget name, text, and commit method
@@ -95,13 +100,13 @@ Examples:
 ## Runtime Behaviour
 The task stays active while the root widget exists.
 
-If the target widget is not present when the task starts, it keeps trying to find it while active. This allows it to bind to named widgets that are added later at runtime, as long as they appear under the bound root widget with the expected name.
+The selected target widget must already exist when the task enters. BindWidgetEvent no longer polls for widgets that are added later at runtime.
 
 If the root widget is destroyed, the task completes.
 
 ---
 
 ## Error Handling
-If the bound root widget is invalid when the task starts, the task fails. If a root widget class is provided, the editor also validates that the selected target widget and selected widget event are still valid for that class.
+If the bound root widget is invalid when the task starts, the task fails. The task also fails if the selected target widget does not already exist when the task enters. If a root widget class is provided, the editor also validates that the selected target widget and selected widget event are still valid for that class.
 
 [← Back to UI](/tasks/ui) · [← Back to home](/)
