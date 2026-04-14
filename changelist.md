@@ -8,6 +8,12 @@ title: Changelist
 
 ### Tasks
 
+- [QuitGame](/tasks/quit-game)
+  Added a System category task that wraps Unreal's built-in Quit Game node. Supports all the same parameters: an optional specific player controller, quit preference (Quit or Background), and ignore platform restrictions.
+
+- [CallWidgetEvent](/tasks/call-widget-event)
+  Added a UI task for calling Blueprint functions on a bound `UUserWidget` by name. Works like [CallActorEvent](/tasks/call-actor-event) — set the widget class to populate the event dropdown, select a function, fill or bind its parameters, and control whether it fires on enter, exit, or both.
+
 - [CreateWidget](/tasks/create-widget)
   Added a task for creating `UUserWidget` instances from StateTree, with support for expose-on-spawn properties, optional viewport insertion, and widget output binding.
 
