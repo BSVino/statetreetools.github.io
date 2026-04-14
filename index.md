@@ -42,6 +42,7 @@ Tasks run when a state is entered or exited and can keep the state alive while t
 
 | Category | Description |
 |----------|-------------|
+| [Actor](/tasks/actor) | Find actors in the world |
 | [Audio](/tasks/audio) | Play and stop sounds on actors |
 | [Animation](/tasks/animation) | Trigger and control animation montages |
 | [Debug](/tasks/debug) | Draw debug shapes; flush debug lines and strings |

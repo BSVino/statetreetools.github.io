@@ -8,6 +8,9 @@ title: Changelist
 
 ### Tasks
 
+- [GetActorOfClass](/tasks/get-actor-of-class)
+  Added an Actor category task that wraps Unreal's Blueprint Get Actor Of Class node. Takes an actor class and outputs the first matching actor found in the world; finding no actor is not an error.
+
 - [QuitGame](/tasks/quit-game)
   Added a System category task that wraps Unreal's built-in Quit Game node. Supports all the same parameters: an optional specific player controller, quit preference (Quit or Background), and ignore platform restrictions.
 
