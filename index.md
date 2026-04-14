@@ -47,6 +47,7 @@ Tasks run when a state is entered or exited and can keep the state alive while t
 | [Debug](/tasks/debug) | Draw debug shapes; flush debug lines and strings |
 | [Niagara](/tasks/niagara) | Spawn and manage Niagara particle systems |
 | [Navigation](/tasks/navigation) | Find random reachable points for patrol and wandering |
+| [Input](/tasks/input) | Set player controller input modes |
 | [UI](/tasks/ui) | Create widgets, call widget events, and listen to widget events |
 | [Gameplay \| Actions](/tasks/actions) | Drive async Blueprint logic from a StateTree state |
 | [Gameplay \| StateTree](/tasks/statetree) | Send events with typed payloads to StateTree components |

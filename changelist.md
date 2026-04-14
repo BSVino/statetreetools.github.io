@@ -14,6 +14,9 @@ title: Changelist
 - [CallWidgetEvent](/tasks/call-widget-event)
   Added a UI task for calling Blueprint functions on a bound `UUserWidget` by name. Works like [CallActorEvent](/tasks/call-actor-event) — set the widget class to populate the event dropdown, select a function, fill or bind its parameters, and control whether it fires on enter, exit, or both.
 
+- [Set Input Mode: Game Only](/tasks/set-input-mode-game-only), [Set Input Mode: UI Only](/tasks/set-input-mode-ui-only), [Set Input Mode: Game And UI](/tasks/set-input-mode-game-and-ui)
+  Added three Input category tasks that wrap Unreal's Set Input Mode nodes. Each takes a bound player controller and mode-specific parameters (widget to focus, mouse lock mode, hide cursor during capture), and supports the standard enter/exit firing checkboxes.
+
 - [CreateWidget](/tasks/create-widget)
   Added a task for creating `UUserWidget` instances from StateTree, with support for expose-on-spawn properties, optional viewport insertion, and widget output binding.
 
