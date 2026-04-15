@@ -8,6 +8,9 @@ title: Changelist
 
 ### Tasks
 
+- [AddMappingContext](/tasks/add-mapping-context), [RemoveMappingContext](/tasks/remove-mapping-context)
+  Added Enhanced Input category tasks for adding and removing Input Mapping Contexts on the Enhanced Input Local Player Subsystem. Both support the standard enter/exit firing checkboxes. Add Mapping Context also has a **Remove On Exit State** option that removes the context on any exit, and the StateTree compiler rejects configurations where both Remove On Exit State and Call On Exit State are enabled simultaneously.
+
 - [GetActorOfClass](/tasks/get-actor-of-class)
   Added an Actor category task that wraps Unreal's Blueprint Get Actor Of Class node. Takes an actor class and outputs the first matching actor found in the world; finding no actor is not an error.
 
@@ -40,6 +43,9 @@ title: Changelist
 
 - [GetComponentByClass](/property-functions/get-component-by-class)
   Added a property function that mirrors Unreal's Blueprint [Get Component By Class](/property-functions/get-component-by-class) node and returns the first matching component on a bound actor.
+
+- [GetEnhancedInputLocalPlayerSubsystem](/property-functions/get-enhanced-input-local-player-subsystem), [GetEnhancedInputWorldSubsystem](/property-functions/get-enhanced-input-world-subsystem)
+  Added Enhanced Input category property functions for accessing the Enhanced Input Local Player Subsystem (from a player controller) and the Enhanced Input World Subsystem (from the current world).
 
 - [GetPlayerController](/property-functions/get-player-controller) *(Game category)*
   Added a property function that mirrors Unreal's Blueprint Get Player Controller node. Takes a player index and returns the corresponding `APlayerController`.

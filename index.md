@@ -48,6 +48,7 @@ Tasks run when a state is entered or exited and can keep the state alive while t
 | [Debug](/tasks/debug) | Draw debug shapes; flush debug lines and strings |
 | [Niagara](/tasks/niagara) | Spawn and manage Niagara particle systems |
 | [Navigation](/tasks/navigation) | Find random reachable points for patrol and wandering |
+| [Enhanced Input](/tasks/enhanced-input) | Add and remove Enhanced Input mapping contexts |
 | [Input](/tasks/input) | Set player controller input modes |
 | [UI](/tasks/ui) | Create widgets, call widget events, and listen to widget events |
 | [Gameplay \| Actions](/tasks/actions) | Drive async Blueprint logic from a StateTree state |
@@ -68,6 +69,7 @@ Property functions compute a value each time a binding is evaluated.
 | Category | Description |
 |----------|-------------|
 | [Components](/property-functions/components) | Get root component and other component accessors |
+| [Enhanced Input](/property-functions/enhanced-input) | Access Enhanced Input subsystems |
 | [Game](/property-functions/game) | Access game-level objects such as player controllers |
 | [Math \| Float](/property-functions/math-float) | Arithmetic, comparisons, trigonometry, and general float math |
 | [Math \| Vector](/property-functions/math-vector) | Vector arithmetic, measurement, and conversion |
