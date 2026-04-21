@@ -74,6 +74,10 @@ title: Changelist
   Task inputs for event calls, delegate calls, property setting, and Create Widget now support array values.
   This includes event parameters for [CallActorEvent](/tasks/call-actor-event), [CallActorDelegate](/tasks/call-actor-delegate), [StartActionAndWait](/tasks/start-action-and-wait), [CallComponentEvent](/tasks/call-component-event), [CallComponentDelegate](/tasks/call-component-delegate), property values for [SetActorProperty](/tasks/set-actor-property) and [SetComponentProperty](/tasks/set-component-property), and expose-on-spawn widget properties for [Create Widget](/tasks/create-widget).
 
+
+- Default values for generated task inputs
+  Generated fields for event calls, delegate calls, StartActionAndWait inputs, property-setting values, and Create Widget expose-on-spawn properties now initialize from reflected defaults when available. Existing user-entered values are preserved when those fields refresh.
+
 ## Version 1.0
 
 ### Tasks
