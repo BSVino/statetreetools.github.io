@@ -1,4 +1,4 @@
-﻿---
+---
 title: Changelist
 ---
 
@@ -49,6 +49,9 @@ title: Changelist
 
 - [GetPlayerController](/property-functions/get-player-controller) *(Game category)*
   Added a property function that mirrors Unreal's Blueprint Get Player Controller node. Takes a player index and returns the corresponding `APlayerController`.
+
+- [GetWidgetAnimation](/property-functions/get-widget-animation) *(UI category)*
+  Added a property function that gets a named `UWidgetAnimation` from a bound widget. The widget class populates the animation dropdown and compile validation catches renamed or deleted animations.
 
 ### Components
 
