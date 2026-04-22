@@ -1,4 +1,4 @@
-﻿---
+---
 title: Utilities | Events
 ---
 
@@ -12,5 +12,6 @@ Tasks for calling Blueprint events and event dispatchers on actors at runtime.
 | [Call Component Event](/tasks/call-component-event) | Call a Blueprint event or function on a component by name |
 | [Call Actor Delegate](/tasks/call-actor-delegate) | Broadcast a Blueprint event dispatcher on an actor by name |
 | [Call Component Delegate](/tasks/call-component-delegate) | Broadcast a Blueprint event dispatcher on a component by name |
+| [WaitForDelegate](/tasks/wait-for-delegate) | Wait for a Blueprint event dispatcher on an actor or component, publish supported payload outputs, then complete |
 
 [← Back to home](/)
